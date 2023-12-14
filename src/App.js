@@ -14,6 +14,7 @@ import SelectedMovie from "./components/SelectedMovie";
 import { useMovies } from "./custom-hooks/useMovies";
 import { useLocalStorageState } from "./custom-hooks/useLocalStorageState";
 
+
 // OMDb API: http://www.omdbapi.com/?i=tt3896198&apikey=496feb47
 
 // Click the following URL to activate your key: http://www.omdbapi.com/apikey.aspx?VERIFYKEY=78c74b5c-25e9-4ebe-8139-809ecd1933ac
