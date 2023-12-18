@@ -21,4 +21,4 @@ Stats Showtime: Ever wondered about your movie-watching prowess? Our stats secti
 Ready to Popcorn-and-Chill? 🍿
 UsePopcorn is not just an app; it's a cinematic adventure. Dive into the world of movies, stats, and good times! 🎉
 
-[CTA: Check out the live demo and start your cinematic journey now!]
+Live demo - https://hyperball123.github.io/usePopcorn/
