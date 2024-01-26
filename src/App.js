@@ -14,7 +14,6 @@ import SelectedMovie from "./components/SelectedMovie";
 import { useMovies } from "./custom-hooks/useMovies";
 import { useLocalStorageState } from "./custom-hooks/useLocalStorageState";
 
-
 // OMDb API: http://www.omdbapi.com/?i=tt3896198&apikey=496feb47
 
 // Click the following URL to activate your key: http://www.omdbapi.com/apikey.aspx?VERIFYKEY=78c74b5c-25e9-4ebe-8139-809ecd1933ac
@@ -46,7 +45,7 @@ export default function App() {
   }
 
   return (
-    <>
+    <div classname="container">
       <Navbar>
         <Logo />
         <Search query={query} setQuery={setQuery} />
@@ -54,10 +53,14 @@ export default function App() {
       </Navbar>
       <Main>
         <Box>
+          {!movies.length && <h2 className="search-movie-h2">Search Movies</h2>}
           {loading && <Loader />}
           {!loading && !error && (
-            <MovieList movies={movies} onSelectMovie={handleSelectMovie} />
+            <>
+              <MovieList movies={movies} onSelectMovie={handleSelectMovie} />
+            </>
           )}
+
           {error && <ErrorMsg message={error} />}
         </Box>
         <Box>
@@ -79,6 +82,6 @@ export default function App() {
           )}
         </Box>
       </Main>
-    </>
+    </div>
   );
 }
